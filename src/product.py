@@ -1,6 +1,3 @@
-from tabnanny import check
-
-
 class Product:
     '''Класс для представления продукта'''
     name: str
@@ -35,7 +32,7 @@ class Product:
             print('Цена не должна быть нулевая или отрицательная')
             return
         if new_price < self.__price:
-            check = input("Изменять цену y / n ")
-            if check != 'y':
+            check_input = input("Изменять цену? Введите y если да,и n если нет.\n")
+            if check_input != 'y':
                 return
         self.__price = new_price
