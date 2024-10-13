@@ -45,3 +45,9 @@ if __name__ == "__main__":
 
     print(Category.category_count)
     print(Category.product_count)
+
+    product = Product.new_product({'name': r"j55\" QLED 4K", 'description': '', 'price': 1000, 'quantity': 3}, [product4])
+    print(product.__dict__)
+
+    product.price = 1
+    print(product.__dict__)
