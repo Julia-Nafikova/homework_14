@@ -8,7 +8,6 @@ class CategoryIterator:
         self.category = category_obj
         self.index = 0
 
-
     def __iter__(self):
         self.index = 0
         return self
@@ -20,6 +19,7 @@ class CategoryIterator:
             return product
         else:
             raise StopIteration
+
 
 if __name__ == '__main__':
     product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
@@ -36,5 +36,3 @@ if __name__ == '__main__':
 
     for product in iterator:
         print(product)
-
-

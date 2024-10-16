@@ -26,8 +26,10 @@ def test_add_product():
     product.price = 180000.0
     product.quantity = 5
 
+
 def test_category_str(first_category):
     assert str(first_category) == 'Смартфоны, количество продуктов: 13 шт.'
+
 
 def test_category_iterator(category_iterator):
     iter(category_iterator)
