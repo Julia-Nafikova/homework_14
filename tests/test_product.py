@@ -1,3 +1,6 @@
+from src.product import Product
+
+
 def test_product_init(first_product):
     assert first_product.name == 'Samsung'
     assert first_product.description == '256GB, Серый цвет, 200MP камера'
@@ -17,3 +20,11 @@ def test_product_str(first_product):
 
 def test_product_add(first_product, second_product):
     assert first_product + second_product == 2580000.0
+
+def test_new_product(dict_product, first_product):
+    new_test = Product.new_product(dict_product)
+    assert new_test.name == "Samsung Galaxy S23 Ultra"
+    assert new_test.description == "256GB, Серый цвет, 200MP камера"
+    assert new_test.price == 180000
+    assert new_test.quantity == 5
+

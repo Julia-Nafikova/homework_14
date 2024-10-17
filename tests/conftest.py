@@ -110,3 +110,12 @@ def data():
 @pytest.fixture
 def category_iterator(first_category):
     return CategoryIterator(first_category)
+
+@pytest.fixture
+def dict_product():
+    dict_prod = {"name": "Samsung Galaxy S23 Ultra", "description": "256GB, Серый цвет, 200MP камера", "price": 180000.0,
+         "quantity": 5}
+    return  dict_prod
+
+
+
