@@ -1,5 +1,5 @@
 # from collections import namedtuple
-#
+
 # import pytest
 #
 # from src.category import Category
@@ -12,16 +12,15 @@ def test_read_json(path, data):
 
 # Data = namedtuple('Data', ['categories'])
 # TestData = Data([{'products': ['product1', 'product2']}, {'products': ['product3']}])
-#
+
 # @pytest.mark.parametrize('data', [TestData])
 # def test_create_objects_from_json(data):
 #     # Ожидаемый результат
 #     expected_result = [
-#         Category('category1', 'category1', {'products': [Product('product1', 'product1', 'product1', 'product1'), Product('product2', 'product2', 'product2', 'product2')]}),
-#         Category('category2', 'category2', {'products': [Product('product3', 'product3', 'product3', 'product3')]})
+#         Category('category1', 'category1', {'products': [Product(name='Samsung Galaxy C23 Ultra', description='256GB, Серый цвет, 200MP камера', price=180000.0, quantity=5), Product(name='Iphone 15', description='512GB, Gray space', price=210000.0, quantity=8)]}),
+#         Category('category2', 'category2', {'products': [Product(name='Xiaomi Redmi Note 11', description='1024GB, Синий', price=31000.0, quantity=14)]})
 #     ]
 #     # Вызов функции
 #     result = create_objects_from_json(data)
-#
 #     # Проверка результата
 #     assert result == expected_result
