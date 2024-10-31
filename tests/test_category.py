@@ -50,3 +50,7 @@ def test_category_iterator(category_iterator):
 
     with pytest.raises(StopIteration):
         next(category_iterator)
+
+
+def test_middle_price(mid_category, product_without_quantity):
+    assert mid_category.middle_price() == 3
